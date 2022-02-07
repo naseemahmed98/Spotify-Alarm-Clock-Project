@@ -119,7 +119,7 @@ class AlarmClock():
         print('Enter Hour of Alarm Time: ')
         hr_phrase = 'Enter Hour Between 1 and 12'
         hour = self.check_for_int_input(hr_phrase)
-        while hour < 0 or hour > 12:
+        while hour < 1 or hour > 12:
             print('Invalid Input. Enter Hour Between 1 and 12')
             hour = self.check_for_int_input(hr_phrase)
 
