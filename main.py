@@ -16,7 +16,7 @@ class Spotipy():
         try:
             auth_manager = spotipy.oauth2.SpotifyOAuth(client_id=Spotify_Client_ID,
                                                        client_secret=Spotify_Client_Secret,
-                                                       redirect_uri='https://www.google.com/', scope=scope)
+                                                       redirect_uri='https://www.spotify.com/', scope=scope)
             spotifyObject = spotipy.Spotify(auth_manager=auth_manager)
         except (AttributeError, JSONDecodeError):
             os.remove(f".cache-{spotify_username}")
